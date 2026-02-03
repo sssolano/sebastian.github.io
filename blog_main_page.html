@@ -1,32 +1,22 @@
 ---
 layout: base
-title: Blog
+title: Blogs
 ---
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sebastian</title>
-    <link rel="stylesheet" href="/css/blog_main_page.css">
-</head>
-<body class="background">
-    <nav class="top-right-corner">
-        <a class="top-right-corner-link" href="/index.html">Main/</a>
-        <a class="top-right-corner-link" href=".html">Socials</a>
-    </nav>
-    <img src="/img/final-gif.gif" class="gif-style">
-    <h1>> Repositories </h1>
-    <ul>
-         {% for post in site.posts %}
-            <li>
-                <a href="{{ post.url }}" class="blogs_post">
-                    <span class="post-date">{{ post.date | date: "%Y-%m-%d" }}</span>
-                    {{ post.title }}
-                </a>
-            </li>
-          {% endfor %}
-    </ul>
-    
-</body>
-</html>
+<link rel="stylesheet" href="{{ site.baseurl }}/css/blog_main_page.css">
+
+<nav class="top-right-corner">
+    <a class="top-right-corner-link" href="{{ site.baseurl }}/index.html">Main/</a>
+    <a class="top-right-corner-link" href=".html">Socials</a>
+</nav>
+<img src="{{ site.baseurl }}/img/final-gif.gif" class="gif-style">
+<h1>> Repositories </h1>
+<ul>
+     {% for post in site.posts %}
+        <li>
+            <a href="{{ site.baseurl }}{{ post.url }}" class="blogs_post">
+                <span class="post-date">{{ post.date | date: "%d-%m-%Y" }}</span>
+                {{ post.title }}
+            </a>
+        </li>
+      {% endfor %}
+</ul>
