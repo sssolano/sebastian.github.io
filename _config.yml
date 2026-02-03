@@ -1,0 +1,12 @@
+baseurl: "" # Leave empty for user pages (username.github.io)
+url: "https://sssolano.github.io" # Replace with your GitHub Pages URL
+
+# Jekyll settings
+markdown: kramdown
+permalink: /:year/:month/:day/:title.html
+
+# Exclude from processing
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock

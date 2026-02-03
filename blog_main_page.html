@@ -21,6 +21,7 @@ title: Blog
          {% for post in site.posts %}
             <li>
                 <a href="{{ post.url }}" class="blogs_post">
+                    <span class="post-date">{{ post.date | date: "%Y-%m-%d" }}</span>
                     {{ post.title }}
                 </a>
             </li>
