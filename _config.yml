@@ -1,5 +1,5 @@
-baseurl: "" # Leave empty for user pages (username.github.io)
-url: "https://sssolano.github.io" # Replace with your GitHub Pages URL
+baseurl: "/sebastian.github.io" # Set to "/<repo>" for project pages
+url: "https://sssolano.github.io" # Owner domain remains the same
 
 # Jekyll settings
 markdown: kramdown
