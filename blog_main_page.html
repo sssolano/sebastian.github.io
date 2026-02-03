@@ -2,18 +2,18 @@
 layout: base
 title: Blogs
 ---
-<link rel="stylesheet" href="{{ site.baseurl }}/css/blog_main_page.css">
+<link rel="stylesheet" href="{{ '/css/blog_main_page.css' | relative_url }}">
 
 <nav class="top-right-corner">
-    <a class="top-right-corner-link" href="{{ site.baseurl }}/index.html">Main/</a>
-    <a class="top-right-corner-link" href=".html">Socials</a>
+    <a class="top-right-corner-link" href="{{ '/index.html' | relative_url }}">Main/</a>
+    <a class="top-right-corner-link" href="#" aria-disabled="true">Socials</a>
 </nav>
-<img src="{{ site.baseurl }}/img/final-gif.gif" class="gif-style">
+<img src="{{ '/img/final-gif.gif' | relative_url }}" class="gif-style">
 <h1>> Repositories </h1>
 <ul>
      {% for post in site.posts %}
         <li>
-            <a href="{{ site.baseurl }}{{ post.url }}" class="blogs_post">
+            <a href="{{ post.url | relative_url }}" class="blogs_post">
                 <span class="post-date">{{ post.date | date: "%d-%m-%Y" }}</span>
                 {{ post.title }}
             </a>
