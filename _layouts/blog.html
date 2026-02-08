@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="{{ '/css/blogs_css_style.css' | relative_url }}">
+</head>
+<body class="background">
+    <nav class="top-right-corner">
+        <a class="top-right-corner-link" href="{{ '/blog_main_page.html' | relative_url }}">Blogs/</a>
+        <a class="top-right-corner-link" href="#" aria-disabled="true">Socials</a>
+    </nav>
+    <img src="{{ '/img/final-gif.gif' | relative_url }}" class="gif-style">
+    <div class="blog-page">
+        <div class="blog-content">
+            {{ content }}
+        </div>
+    </div>
+</body>
+</html>
